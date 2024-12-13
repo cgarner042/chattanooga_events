@@ -1,0 +1,868 @@
+2024-09-16 13:17:42,293 - INFO - ################################################################################
+2024-09-16 13:17:42,293 - INFO - Fetching and parsing Visit Chattanooga
+2024-09-16 13:17:42,293 - INFO - ################################################################################
+2024-09-16 13:17:42,434 - INFO - Chromedriver is already installed.
+2024-09-16 13:17:42,434 - INFO - ====== WebDriver manager ======
+2024-09-16 13:17:42,488 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:17:42,580 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:17:42,668 - INFO - Driver [/home/garner/.wdm/drivers/chromedriver/linux64/128.0.6613.137/chromedriver-linux64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2024-09-16 13:17:59,015 - INFO - https://www.visitchattanooga.com/events/ fetched
+2024-09-16 13:17:59,094 - INFO - ================================================================================
+2024-09-16 13:17:59,094 - INFO - Grid search result: entRender_type_widget contentRender_name_plugins_common_embed" data-sv-time="54" data-sv-index="16" data-gtm-vars="{ &quot;tCore&quot; : { &quot;contentNum&quot; : &quot;1&quot; } }"><div class="custom-embed" data-guid="4d7c0e6a-279f-404f-a875-567242589865">
+    <script id="cr-init__a35f8e0291db91cd" src="https://starling.crowdriff.com/js/crowdriff.js" async=""></script><div id="cr__a35f8e0291db91cd"><div id="cr__app" class="cr__gallery cr__gallery__isGalleryRefresh" style="overflow-x: hidden;"><div class="cr__grid clearfix" id="a35f8e0291db91cd" style="margin: 0px -2.5px; padding-top: 2.5px; padding-bottom: 2.5px; position: relative;"><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; inset: -16px -15px -15px -16px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 1659px; height: 318px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: 
+2024-09-16 13:17:59,094 - INFO - ================================================================================
+2024-09-16 13:17:59,144 - INFO - Found iframe: //www.googletagmanager.com/ns.html?id=GTM-MQX2GG
+2024-09-16 13:17:59,144 - INFO - Found iframe: //www.googletagmanager.com/ns.html?id=GTM-NFBVG93
+2024-09-16 13:17:59,144 - INFO - Found iframe: javascript:false
+2024-09-16 13:17:59,144 - INFO - Found iframe: //20832837p.rfihub.com/ca.html?rb=44011&ca=20832837&_o=44011&_t=20832837&ra=953380731
+2024-09-16 13:17:59,144 - INFO - Found iframe: //20832838p.rfihub.com/ca.html?rb=44011&ca=20832838&_o=44011&_t=20832838&ra=174544989
+2024-09-16 13:17:59,144 - INFO - Found iframe: https://9715013.fls.doubleclick.net/activityi;src=9715013;type=universa;cat=unive0;ord=2108104281677;npa=0;auiddc=409101175.1726507064;ps=1;pcor=340800161;uaa=x86;uab=64;uafvl=Chromium%3B128.0.6613.119%7CNot%253BA%253DBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B128.0.6613.119;uamb=0;uam=;uap=Linux;uapv=6.8.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe4990v9189896283z871860688za201zb71860688;gcd=13l3l3l3l1l1;dma=0;tag_exp=0;epver=2;~oref=https%3A%2F%2Fwww.visitchattanooga.com%2Fevents%2F?
+2024-09-16 13:17:59,144 - INFO - Found iframe: https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=9715013;type=universa;cat=unive0;ord=2108104281677;npa=0;auiddc=409101175.1726507064;ps=1;pcor=340800161;uaa=x86;uab=64;uafvl=Chromium%3B128.0.6613.119%7CNot%253BA%253DBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B128.0.6613.119;uamb=0;uam=;uap=Linux;uapv=6.8.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe4990v9189896283z871860688za201zb71860688;gcd=13l3l3l3l1l1;dma=0;tag_exp=0;epver=2;~oref=https%3A%2F%2Fwww.visitchattanooga.com%2Fevents%2F?
+2024-09-16 13:17:59,144 - INFO - Found iframe: https://6447211.fls.doubleclick.net/activityi;src=6447211;type=homep0;cat=dcmfl00;ord=7331819872706;npa=0;auiddc=409101175.1726507064;ps=1;pcor=507347145;uaa=x86;uab=64;uafvl=Chromium%3B128.0.6613.119%7CNot%253BA%253DBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B128.0.6613.119;uamb=0;uam=;uap=Linux;uapv=6.8.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe4990v9189051306z871860688za201zb71860688;gcd=13l3l3l3l1l1;dma=0;tag_exp=0;epver=2;~oref=https%3A%2F%2Fwww.visitchattanooga.com%2Fevents%2F?
+2024-09-16 13:17:59,144 - INFO - Found iframe: https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=6447211;type=homep0;cat=dcmfl00;ord=7331819872706;npa=0;auiddc=409101175.1726507064;ps=1;pcor=507347145;uaa=x86;uab=64;uafvl=Chromium%3B128.0.6613.119%7CNot%253BA%253DBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B128.0.6613.119;uamb=0;uam=;uap=Linux;uapv=6.8.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe4990v9189051306z871860688za201zb71860688;gcd=13l3l3l3l1l1;dma=0;tag_exp=0;epver=2;~oref=https%3A%2F%2Fwww.visitchattanooga.com%2Fevents%2F?
+2024-09-16 13:17:59,144 - INFO - Found iframe: https://td.doubleclick.net/td/ga/rul?tid=G-38Q1LMP72Z&gacid=1495148547.1726507064&gtm=45je4990v871888268z871860688za200zb71860688&dma=0&gcd=13l3l3l3l1l1&npa=0&pscdl=noapi&aip=1&fledge=1&frm=0&tag_exp=0&z=1715372204
+2024-09-16 13:17:59,144 - INFO - Found iframe: https://td.doubleclick.net/td/ga/rul?tid=G-61G7MYHF21&gacid=1495148547.1726507064&gtm=45je4990v9137955201za200&dma=0&gcd=13l3l3l3l2l1&npa=0&pscdl=noapi&_ng=1&aip=1&fledge=1&frm=0&tag_exp=0&z=1981609634
+2024-09-16 13:17:59,144 - INFO - Found iframe: javascript:false
+2024-09-16 13:17:59,144 - INFO - Found iframe: https://wsv3cdn.audioeye.com/static-scripts/v2/0d80106d3/cookieStorage.html
+2024-09-16 13:17:59,144 - INFO - Found iframe: about:blank
+2024-09-16 13:17:59,144 - INFO - ================================================================================
+2024-09-16 13:17:59,145 - INFO - #### HTML PARSED ####
+2024-09-16 13:17:59,145 - INFO - ################################################################################
+2024-09-16 13:17:59,229 - INFO - title_tag: a
+2024-09-16 13:17:59,229 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,229 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/%5bmoccasin-bend-lecture-series%5d-from-shiloh-to-fort-pillow%3a-preserving-tennessees-civil-war-history/21547/">[Moccasin Bend Lecture Series] From Shiloh to Fort Pillow: Preserving Tennessee's Civil War History</a>
+2024-09-16 13:17:59,229 - INFO - title_tag: a
+2024-09-16 13:17:59,229 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,229 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/chickamauga-dam-lock-through-kayak-tour-with-chattanooga-guided-adventures/19807/">Chickamauga Dam Lock Through Kayak Tour with Chattanooga Guided Adventures</a>
+2024-09-16 13:17:59,229 - INFO - title_tag: a
+2024-09-16 13:17:59,229 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/exhibit-admission/17763/">Exhibit Admission</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/mountain-bike-rental-with-chattanooga-guided-adventures/19809/">Mountain Bike Rental with Chattanooga Guided Adventures</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/nickajack-bat-cave-kayak-tour-with-chattanooga-guided-adventures/19747/">Nickajack Bat Cave Kayak Tour with Chattanooga Guided Adventures</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/ruby-falls-history-exhibit%3a-celebrating-95-years-of-wonder!/20838/">Ruby Falls History Exhibit: Celebrating 95 Years of Wonder!</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/swifty-season-at-ruby-sunshine/21459/">Swifty Season at Ruby Sunshine</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/teachers-eat-free/21458/">TEACHERS EAT FREE</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/beetlejuice-beetlejuice-in-imax!/21402/">Beetlejuice Beetlejuice in IMAX!</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/history-tour-new-cave-adventure!/20729/">History Tour - New Cave Adventure!</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/homeschool-days-at-ruby-falls/21418/">Homeschool Days at Ruby Falls</a>
+2024-09-16 13:17:59,230 - INFO - title_tag: a
+2024-09-16 13:17:59,230 - INFO - title_attrs: {'class': 'title truncate'}
+2024-09-16 13:17:59,230 - INFO - title_element: <a class="title truncate" data-gtm-click="" data-gtm-vars='{"tCore":{"action":"layoutjs_list_item_title","actionType":"detail"}}' href="/event/dinner-for-twos-days-at-whitebird/21573/">Dinner for Twos-days at Whitebird</a>
+2024-09-16 13:17:59,230 - INFO - Extracted 12 events from Visit Chattanooga
+2024-09-16 13:17:59,230 - INFO - Title: [Moccasin Bend Lecture Series] From Shiloh to Fort Pillow: Preserving Tennessee's Civil War History
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: Chickamauga Dam Lock Through Kayak Tour with Chattanooga Guided Adventures
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: Exhibit Admission
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: Mountain Bike Rental with Chattanooga Guided Adventures
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: Nickajack Bat Cave Kayak Tour with Chattanooga Guided Adventures
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: Ruby Falls History Exhibit: Celebrating 95 Years of Wonder!
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: Swifty Season at Ruby Sunshine
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: TEACHERS EAT FREE
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: Beetlejuice Beetlejuice in IMAX!
+2024-09-16 13:17:59,230 - INFO - Image URL: None
+2024-09-16 13:17:59,230 - INFO - ----------------------------------------
+2024-09-16 13:17:59,230 - INFO - Title: History Tour - New Cave Adventure!
+2024-09-16 13:17:59,231 - INFO - Image URL: None
+2024-09-16 13:17:59,231 - INFO - ----------------------------------------
+2024-09-16 13:17:59,231 - INFO - Title: Homeschool Days at Ruby Falls
+2024-09-16 13:17:59,231 - INFO - Image URL: None
+2024-09-16 13:17:59,231 - INFO - ----------------------------------------
+2024-09-16 13:17:59,231 - INFO - Title: Dinner for Twos-days at Whitebird
+2024-09-16 13:17:59,231 - INFO - Image URL: None
+2024-09-16 13:17:59,231 - INFO - ----------------------------------------
+2024-09-16 13:17:59,231 - INFO - ################################################################################
+2024-09-16 13:17:59,231 - INFO - Fetching and parsing CHA Guide Events
+2024-09-16 13:17:59,231 - INFO - ################################################################################
+2024-09-16 13:17:59,364 - INFO - Chromedriver is already installed.
+2024-09-16 13:17:59,364 - INFO - ====== WebDriver manager ======
+2024-09-16 13:17:59,460 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:17:59,544 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:17:59,632 - INFO - Driver [/home/garner/.wdm/drivers/chromedriver/linux64/128.0.6613.137/chromedriver-linux64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2024-09-16 13:18:14,728 - INFO - https://www.cha.guide/events fetched
+2024-09-16 13:18:14,798 - INFO - ================================================================================
+2024-09-16 13:18:14,799 - INFO - Could not find 'grid' class in the HTML
+2024-09-16 13:18:14,799 - INFO - ================================================================================
+2024-09-16 13:18:14,874 - INFO - No iframes found in HTML
+2024-09-16 13:18:14,875 - INFO - ================================================================================
+2024-09-16 13:18:14,875 - INFO - #### HTML PARSED ####
+2024-09-16 13:18:14,875 - INFO - ################################################################################
+2024-09-16 13:18:15,003 - INFO - title_tag: h3
+2024-09-16 13:18:15,003 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,003 - INFO - title_element: <h3 class="event-title">History Tour (Ruby Falls)</h3>
+2024-09-16 13:18:15,003 - INFO - title_tag: h3
+2024-09-16 13:18:15,003 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,003 - INFO - title_element: <h3 class="event-title">The Dinner Detective Comedy Mystery Dinner Show</h3>
+2024-09-16 13:18:15,003 - INFO - title_tag: h3
+2024-09-16 13:18:15,003 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,003 - INFO - title_element: <h3 class="event-title">The Wallflowers @ Walker Theatre</h3>
+2024-09-16 13:18:15,003 - INFO - title_tag: h3
+2024-09-16 13:18:15,003 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,003 - INFO - title_element: <h3 class="event-title">Chattanooga Market at Erlanger</h3>
+2024-09-16 13:18:15,003 - INFO - title_tag: h3
+2024-09-16 13:18:15,003 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,003 - INFO - title_element: <h3 class="event-title">Silversun Pickups w/ Speedy Ortiz</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title">Gentle Walking Tour (Ruby Falls)</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title">Decades Silent Disco</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title">2024 Best of the Best Awards Celebration</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title">Chattanooga River Market</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title"> Chickamauga Turn</h3>
+2024-09-16 13:18:15,004 - INFO - title_tag: h3
+2024-09-16 13:18:15,004 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,004 - INFO - title_element: <h3 class="event-title">2024 CBD Plus Cannabis Music Festival</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title">Chattanooga Bacon Festival</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title">Trail Blazer Course Preview</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title">Black Jacket Symphony Presents Elton John's 'Madman Across the Water'</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title">ReImagine opens at CDM</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title">FunFair Festival</h3>
+2024-09-16 13:18:15,005 - INFO - title_tag: h3
+2024-09-16 13:18:15,005 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,005 - INFO - title_element: <h3 class="event-title"> Chickamauga Turn</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">Coca-Cola 125 Anniversary Presents Girl Named Tom</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">Jenny Don’t and The Spurs with Cult Baby @ Songbirds</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">Solve &amp; Sip: Turn'n' the Page-Sci-Fi Con Mystery</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">Makers Market</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">2024  Levitt Bloc Chattanooga Music Series</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,006 - INFO - title_tag: h3
+2024-09-16 13:18:15,006 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,006 - INFO - title_element: <h3 class="event-title">History Tour (Ruby Falls)</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">September LIVESTREAM 3-Day Asset Protection &amp; Wealth Creation Summit</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">Ray LaMontagne: Long Way Home Tour</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">Napa Night:  Robert Sinskey X Easy Bistro &amp; Bar</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">Chattanooga Market at Erlanger</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">Intermission - A celebration of the arts in Chattanooga</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">ArtsBuild InterMission</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">Gentle Walking Tour (Ruby Falls)</h3>
+2024-09-16 13:18:15,007 - INFO - title_tag: h3
+2024-09-16 13:18:15,007 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,007 - INFO - title_element: <h3 class="event-title">PILE - LIVE AT THE BONEYARD</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title">Chattanooga Symphony presents Opening Night: Firebird</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title"> Chickamauga Turn</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title">Jordy Searcy with Theo Kandel @ Songbirds</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title">Chattanooga Bacon &amp; Barrel Festival</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title">Chattanooga River Market</h3>
+2024-09-16 13:18:15,008 - INFO - title_tag: h3
+2024-09-16 13:18:15,008 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,008 - INFO - title_element: <h3 class="event-title">KIC Food Truck Festival &amp; Expo</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,009 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,009 - INFO - title_element: <h3 class="event-title">Kris Allen @ Songbirds</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,009 - INFO - title_element: <h3 class="event-title">Open Gate Day</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,009 - INFO - title_element: <h3 class="event-title">The Dinner Detective Comedy Mystery Dinner Show</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,009 - INFO - title_element: <h3 class="event-title">Soddy-Daisy Fall Festival</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,009 - INFO - title_element: <h3 class="event-title">KIC Food Truck Festival &amp; Expo</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,009 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,009 - INFO - title_tag: h3
+2024-09-16 13:18:15,009 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">Spells &amp; Potions Special-Tea</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">Dread Hollow Vengeance: Opening Night!</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">Tyler Bryant &amp; The Shakedown — Music + Food Series @ Songbirds</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">Scenic City Wings</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">2024  Levitt Bloc Chattanooga Music Series</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,010 - INFO - title_element: <h3 class="event-title">Joe Gatto: Let's Get Into It @ Soldiers and Sailors Memorial Auditorium</h3>
+2024-09-16 13:18:15,010 - INFO - title_tag: h3
+2024-09-16 13:18:15,010 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">History Tour (Ruby Falls)</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,011 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">Chattanooga Market at Erlanger</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,011 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">Nurse Blake: Shock Advised Tour</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,011 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">OVO – a buzzing Cirque du Soleil spectacular</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,011 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">Gentle Walking Tour (Ruby Falls)</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,011 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">Jeff Dunham Artificial Intelligence</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,011 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">Dread Hollow: Vengeance</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,011 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,011 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,011 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,012 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">Chattanooga River Market</h3>
+2024-09-16 13:18:15,012 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,012 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">Open Gate Day</h3>
+2024-09-16 13:18:15,012 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">Rumours ATL: A Fleetwood Mac Tribute</h3>
+2024-09-16 13:18:15,012 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,012 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">Desi Banks: The Purpose Chaser Tour</h3>
+2024-09-16 13:18:15,012 - INFO - title_tag: h3
+2024-09-16 13:18:15,012 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,012 - INFO - title_element: <h3 class="event-title">9th Annual Latin Festival &amp; Open House</h3>
+2024-09-16 13:18:15,013 - INFO - title_tag: h3
+2024-09-16 13:18:15,013 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,013 - INFO - title_element: <h3 class="event-title">THE HOMEFRONT TEA ROOM</h3>
+2024-09-16 13:18:15,013 - INFO - title_tag: h3
+2024-09-16 13:18:15,013 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,013 - INFO - title_element: <h3 class="event-title">Open Gate Day</h3>
+2024-09-16 13:18:15,013 - INFO - title_tag: h3
+2024-09-16 13:18:15,013 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,013 - INFO - title_element: <h3 class="event-title">Rails, Wizards &amp; Spells</h3>
+2024-09-16 13:18:15,013 - INFO - title_tag: h3
+2024-09-16 13:18:15,013 - INFO - title_attrs: {'class': 'event-title'}
+2024-09-16 13:18:15,013 - INFO - title_element: <h3 class="event-title">Chattanooga Market at Erlanger</h3>
+2024-09-16 13:18:15,013 - INFO - Extracted 80 events from CHA Guide Events
+2024-09-16 13:18:15,013 - INFO - Title: History Tour (Ruby Falls)
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: The Dinner Detective Comedy Mystery Dinner Show
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: The Wallflowers @ Walker Theatre
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Chattanooga Market at Erlanger
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Silversun Pickups w/ Speedy Ortiz
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Gentle Walking Tour (Ruby Falls)
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Decades Silent Disco
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: 2024 Best of the Best Awards Celebration
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Chattanooga River Market
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Chickamauga Turn
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: 2024 CBD Plus Cannabis Music Festival
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Chattanooga Bacon Festival
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Trail Blazer Course Preview
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Black Jacket Symphony Presents Elton John's 'Madman Across the Water'
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: ReImagine opens at CDM
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: FunFair Festival
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Chickamauga Turn
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Coca-Cola 125 Anniversary Presents Girl Named Tom
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Jenny Don’t and The Spurs with Cult Baby @ Songbirds
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Solve & Sip: Turn'n' the Page-Sci-Fi Con Mystery
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,013 - INFO - Title: Makers Market
+2024-09-16 13:18:15,013 - INFO - Image URL: None
+2024-09-16 13:18:15,013 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: 2024  Levitt Bloc Chattanooga Music Series
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: History Tour (Ruby Falls)
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: September LIVESTREAM 3-Day Asset Protection & Wealth Creation Summit
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Ray LaMontagne: Long Way Home Tour
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Napa Night:  Robert Sinskey X Easy Bistro & Bar
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chattanooga Market at Erlanger
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Intermission - A celebration of the arts in Chattanooga
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: ArtsBuild InterMission
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Gentle Walking Tour (Ruby Falls)
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: PILE - LIVE AT THE BONEYARD
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chattanooga Symphony presents Opening Night: Firebird
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chickamauga Turn
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Jordy Searcy with Theo Kandel @ Songbirds
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chattanooga Bacon & Barrel Festival
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chattanooga River Market
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: KIC Food Truck Festival & Expo
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Kris Allen @ Songbirds
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Open Gate Day
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: The Dinner Detective Comedy Mystery Dinner Show
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Soddy-Daisy Fall Festival
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: KIC Food Truck Festival & Expo
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Spells & Potions Special-Tea
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Dread Hollow Vengeance: Opening Night!
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Tyler Bryant & The Shakedown — Music + Food Series @ Songbirds
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Scenic City Wings
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: 2024  Levitt Bloc Chattanooga Music Series
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Joe Gatto: Let's Get Into It @ Soldiers and Sailors Memorial Auditorium
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: History Tour (Ruby Falls)
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chattanooga Market at Erlanger
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Nurse Blake: Shock Advised Tour
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: OVO – a buzzing Cirque du Soleil spectacular
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Gentle Walking Tour (Ruby Falls)
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Jeff Dunham Artificial Intelligence
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Dread Hollow: Vengeance
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chattanooga River Market
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Open Gate Day
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rumours ATL: A Fleetwood Mac Tribute
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Desi Banks: The Purpose Chaser Tour
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: 9th Annual Latin Festival & Open House
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: THE HOMEFRONT TEA ROOM
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Open Gate Day
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Rails, Wizards & Spells
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - Title: Chattanooga Market at Erlanger
+2024-09-16 13:18:15,014 - INFO - Image URL: None
+2024-09-16 13:18:15,014 - INFO - ----------------------------------------
+2024-09-16 13:18:15,014 - INFO - ################################################################################
+2024-09-16 13:18:15,014 - INFO - Fetching and parsing Chattanooga Pulse
+2024-09-16 13:18:15,014 - INFO - ################################################################################
+2024-09-16 13:18:15,157 - INFO - Chromedriver is already installed.
+2024-09-16 13:18:15,157 - INFO - ====== WebDriver manager ======
+2024-09-16 13:18:15,239 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:18:15,326 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:18:15,411 - INFO - Driver [/home/garner/.wdm/drivers/chromedriver/linux64/128.0.6613.137/chromedriver-linux64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2024-09-16 13:18:29,081 - INFO - https://www.chattanoogapulse.com/search/event/the-pulse-event-search/#page=1 fetched
+2024-09-16 13:18:29,146 - INFO - ================================================================================
+2024-09-16 13:18:29,146 - INFO - Could not find 'grid' class in the HTML
+2024-09-16 13:18:29,146 - INFO - ================================================================================
+2024-09-16 13:18:29,160 - INFO - Found iframe: https://www.googletagmanager.com/ns.html?id=GTM-WL6W234
+2024-09-16 13:18:29,160 - INFO - Found iframe: No src attribute
+2024-09-16 13:18:29,160 - INFO - Found iframe: No src attribute
+2024-09-16 13:18:29,160 - INFO - Found iframe: No src attribute
+2024-09-16 13:18:29,160 - INFO - Found iframe: No src attribute
+2024-09-16 13:18:29,160 - INFO - Found iframe: No src attribute
+2024-09-16 13:18:29,160 - INFO - Found iframe: https://td.doubleclick.net/td/ga/rul?tid=G-TH4NXE4E66&gacid=461497452.1726507096&gtm=45je4990v895950752z8831726218za200&dma=0&gcd=13l3l3l3l1l1&npa=0&pscdl=noapi&aip=1&fledge=1&frm=0&tag_exp=0&z=501498863
+2024-09-16 13:18:29,160 - INFO - Found iframe: No src attribute
+2024-09-16 13:18:29,160 - INFO - Found iframe: https://www.google.com/recaptcha/api2/aframe
+2024-09-16 13:18:29,160 - INFO - Found iframe: https://securepubads.g.doubleclick.net/static/topics/topics_frame.html
+2024-09-16 13:18:29,160 - INFO - ================================================================================
+2024-09-16 13:18:29,160 - INFO - #### HTML PARSED ####
+2024-09-16 13:18:29,160 - INFO - ################################################################################
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,179 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,179 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/homeschool-days-ruby-falls-0/?occ_dtstart=2024-09-16T08:00">Homeschool Days at Ruby Falls</a></h4>
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,179 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,179 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/gate-11-monday-night-blues-jam/?occ_dtstart=2024-09-16T20:00">Gate 11 Monday Night Blues Jam</a></h4>
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,179 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,179 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/homeschool-days-ruby-falls-0/?occ_dtstart=2024-09-17T08:00">Homeschool Days at Ruby Falls</a></h4>
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,179 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,179 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/joggers-lagers_2/?occ_dtstart=2024-09-17T18:00">Joggers &amp; Lagers</a></h4>
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,179 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,179 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/civil-rights-attorney-ben-crump-premiere-sue-klan-utc-students-professors-september-17/?occ_dtstart=2024-09-17T18:00">Civil Rights Attorney Ben Crump To Premiere How To Sue The Klan</a></h4>
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,179 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,179 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/tuesday-tunes-andrew-witherspoon/?occ_dtstart=2024-09-17T18:00">Tuesday Tunes with Andrew Witherspoon</a></h4>
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,179 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,179 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/taco-tuesday-tunes-amber-fults/?occ_dtstart=2024-09-17T18:00">Taco Tuesday + Tunes with Amber Fults</a></h4>
+2024-09-16 13:18:29,179 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/paths-pints-along-riverwalk/?occ_dtstart=2024-09-17T18:30">Paths to Pints along the Riverwalk</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/hand-sewing-essentials/?occ_dtstart=2024-09-17T18:30">Hand Sewing Essentials</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/danimal-and-friends_2/?occ_dtstart=2024-09-17T19:00">Danimal And Friends</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/greater-ghost-book-launch/?occ_dtstart=2024-09-17T19:00">Greater Ghost Book Launch</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/homeschool-days-ruby-falls-0/?occ_dtstart=2024-09-18T08:00">Homeschool Days at Ruby Falls</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/main-street-farmers-market_13/?occ_dtstart=2024-09-18T16:00">Main Street Farmers Market</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/conservation-corks/?occ_dtstart=2024-09-18T17:00">Conservation &amp; Corks</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/live-music-lucy-smith-0/?occ_dtstart=2024-09-18T18:00">Live Music with Lucy Smith</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/fleet-feet-x-oddstory-pub-run/?occ_dtstart=2024-09-18T18:00">Fleet Feet x Oddstory Pub Run</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/live-music-eric-kirkendoll-7/?occ_dtstart=2024-09-18T18:00">Live Music with Eric Kirkendoll</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/page-turners-patio-2/?occ_dtstart=2024-09-18T18:30">Page-Turners on the Patio</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/board-game-night/?occ_dtstart=2024-09-18T18:30">Board Game Night</a></h4>
+2024-09-16 13:18:29,180 - INFO - title_tag: h4
+2024-09-16 13:18:29,180 - INFO - title_attrs: {'class': 'event_title'}
+2024-09-16 13:18:29,180 - INFO - title_element: <h4 class="event_title"><a href="https://www.chattanoogapulse.com/events/josey-clay-doc-holidays-bar-grill/?occ_dtstart=2024-09-18T19:00">Josey Clay</a></h4>
+2024-09-16 13:18:29,181 - INFO - Extracted 20 events from Chattanooga Pulse
+2024-09-16 13:18:29,181 - INFO - Title: Homeschool Days at Ruby Falls
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Gate 11 Monday Night Blues Jam
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Homeschool Days at Ruby Falls
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Joggers & Lagers
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Civil Rights Attorney Ben Crump To Premiere How To Sue The Klan
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Tuesday Tunes with Andrew Witherspoon
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Taco Tuesday + Tunes with Amber Fults
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Paths to Pints along the Riverwalk
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Hand Sewing Essentials
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Danimal And Friends
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Greater Ghost Book Launch
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Homeschool Days at Ruby Falls
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Main Street Farmers Market
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Conservation & Corks
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Live Music with Lucy Smith
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Fleet Feet x Oddstory Pub Run
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Live Music with Eric Kirkendoll
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Page-Turners on the Patio
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Board Game Night
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - Title: Josey Clay
+2024-09-16 13:18:29,181 - INFO - Image URL: None
+2024-09-16 13:18:29,181 - INFO - ----------------------------------------
+2024-09-16 13:18:29,181 - INFO - ################################################################################
+2024-09-16 13:18:29,181 - INFO - Fetching and parsing Chatt Library
+2024-09-16 13:18:29,181 - INFO - ################################################################################
+2024-09-16 13:18:29,317 - INFO - Chromedriver is already installed.
+2024-09-16 13:18:29,318 - INFO - ====== WebDriver manager ======
+2024-09-16 13:18:29,391 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:18:29,475 - INFO - Get LATEST chromedriver version for google-chrome
+2024-09-16 13:18:29,565 - INFO - Driver [/home/garner/.wdm/drivers/chromedriver/linux64/128.0.6613.137/chromedriver-linux64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2024-09-16 13:18:44,605 - INFO - https://chattlibrary.org/events/ fetched
+2024-09-16 13:18:44,671 - INFO - ================================================================================
+2024-09-16 13:18:44,671 - INFO - Could not find 'grid' class in the HTML
+2024-09-16 13:18:44,671 - INFO - ================================================================================
+2024-09-16 13:18:44,699 - INFO - No iframes found in HTML
+2024-09-16 13:18:44,699 - INFO - ================================================================================
+2024-09-16 13:18:44,699 - INFO - #### HTML PARSED ####
+2024-09-16 13:18:44,699 - INFO - ################################################################################
+2024-09-16 13:18:44,739 - INFO - title_tag: a
+2024-09-16 13:18:44,739 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,739 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/full-steam-ahead-south-chatt/2024-09-16/" rel="bookmark" title="Full Steam Ahead South Chatt">
+		Full Steam Ahead South Chatt	</a>
+2024-09-16 13:18:44,739 - INFO - title_tag: a
+2024-09-16 13:18:44,739 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/eastgate-authors/2024-09-16/" rel="bookmark" title="Eastgate Authors">
+		Eastgate Authors	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/full-steam-ahead-downtown-2-2-2/2024-09-16/" rel="bookmark" title="Full Steam Ahead Downtown">
+		Full Steam Ahead Downtown	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/toddler-time-at-downtown-tuesday-10am/2024-09-17/" rel="bookmark" title="Toddler Time at Downtown Tuesday 10am">
+		Toddler Time at Downtown Tuesday 10am	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/baby-bounce-at-eastgate-tuesday-10am/2024-09-17/" rel="bookmark" title="Baby Bounce at Eastgate Tuesday 10am">
+		Baby Bounce at Eastgate Tuesday 10am	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/preschool-storytime-at-northgate-tuesday-10am/2024-09-17/" rel="bookmark" title="Preschool Storytime at Northgate Tuesday 10am">
+		Preschool Storytime at Northgate Tuesday 10am	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/preschool-storytime-at-northgate-tuesday-11am/2024-09-17/" rel="bookmark" title="Preschool Storytime at Northgate Tuesday 11am">
+		Preschool Storytime at Northgate Tuesday 11am	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/baby-bounce-at-downtown-tuesday-12pm/2024-09-17/" rel="bookmark" title="Baby Bounce at Downtown Tuesday 12pm">
+		Baby Bounce at Downtown Tuesday 12pm	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/move-it-with-the-pop-up-project/2024-09-17/" rel="bookmark" title="Move It! with The Pop-Up Project">
+		Move It! with The Pop-Up Project	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,740 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/full-steam-ahead-eastgate/2024-09-17/" rel="bookmark" title="Full Steam Ahead Eastgate">
+		Full Steam Ahead Eastgate	</a>
+2024-09-16 13:18:44,740 - INFO - title_tag: a
+2024-09-16 13:18:44,740 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,741 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/steam-powered-fun-eastgate-2/2024-09-17/" rel="bookmark" title="STEAM-Powered Fun Eastgate">
+		STEAM-Powered Fun Eastgate	</a>
+2024-09-16 13:18:44,741 - INFO - title_tag: a
+2024-09-16 13:18:44,741 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,741 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/toddler-time-at-northgate-tuesday-10am-2/2024-09-18/" rel="bookmark" title="Toddler Time at Northgate Wednesday 10am">
+		Toddler Time at Northgate Wednesday 10am	</a>
+2024-09-16 13:18:44,741 - INFO - title_tag: a
+2024-09-16 13:18:44,741 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,741 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/toddler-time-at-eastgate-wednesday-10am/2024-09-18/" rel="bookmark" title="Toddler Time at Eastgate Wednesday 10am">
+		Toddler Time at Eastgate Wednesday 10am	</a>
+2024-09-16 13:18:44,741 - INFO - title_tag: a
+2024-09-16 13:18:44,741 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,741 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/outdoor-storytime-with-south-chatt-3/2024-09-18/" rel="bookmark" title="Outdoor Storytime at South Chatt">
+		Outdoor Storytime at South Chatt	</a>
+2024-09-16 13:18:44,741 - INFO - title_tag: a
+2024-09-16 13:18:44,741 - INFO - title_attrs: {'class': 'tribe-events-calendar-list__event-title-link tribe-common-anchor-thin'}
+2024-09-16 13:18:44,741 - INFO - title_element: <a class="tribe-events-calendar-list__event-title-link tribe-common-anchor-thin" href="https://chattlibrary.org/event/preschool-storytime-at-downtown-wednesdays-10am/2024-09-18/" rel="bookmark" title="Preschool Storytime at Downtown Wednesdays 10am">
+		Preschool Storytime at Downtown Wednesdays 10am	</a>
+2024-09-16 13:18:44,741 - INFO - Extracted 15 events from Chatt Library
+2024-09-16 13:18:44,741 - INFO - Title: Full Steam Ahead South Chatt
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Eastgate Authors
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Full Steam Ahead Downtown
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Toddler Time at Downtown Tuesday 10am
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Baby Bounce at Eastgate Tuesday 10am
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Preschool Storytime at Northgate Tuesday 10am
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Preschool Storytime at Northgate Tuesday 11am
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Baby Bounce at Downtown Tuesday 12pm
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Move It! with The Pop-Up Project
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Full Steam Ahead Eastgate
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: STEAM-Powered Fun Eastgate
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Toddler Time at Northgate Wednesday 10am
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Toddler Time at Eastgate Wednesday 10am
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Outdoor Storytime at South Chatt
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------
+2024-09-16 13:18:44,741 - INFO - Title: Preschool Storytime at Downtown Wednesdays 10am
+2024-09-16 13:18:44,741 - INFO - Image URL: None
+2024-09-16 13:18:44,741 - INFO - ----------------------------------------

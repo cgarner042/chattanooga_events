@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Chattanoogga Event Scraper
+Comment=Run event scraper python script
+Exec=bash -c '/home/garner/anaconda3/bin/python "/home/garner/code/chattanooga_events/event_scraper6.py"'
+Icon=utilities-terminal
+Terminal=true
+Type=Application
+
