@@ -3,6 +3,8 @@
 This project is a web scraper designed to extract event details from multiple websites hosting information about Chattanooga events. It uses Python, Selenium, and BeautifulSoup to fetch, parse, and save event data. The extracted data includes titles, dates, times, locations, image URLs, and event details.
 
 ---
+***This project is currently in a working state but may have some bugs if sites change formatting. As of now it runs only when prompted, but the goal is to automatically run daily and have the output csv accessible through a web app like glide or appsheet.***
+---
 
 ## Table of Contents
 
