@@ -2,7 +2,8 @@
 Version=1.0
 Name=Chattanoogga Event Scraper
 Comment=Run event scraper python script
-Exec=bash -c '/home/garner/anaconda3/bin/python "/home/garner/code/chattanooga_events/event_scraper6.py"'
+Exec=bash -c '/home/garner/anaconda3/bin/python "/home/garner/code/chattanooga_events/event_scraper6.py" && libreoffice --calc "/home/garner/code/chattanooga_events/data/all_events.csv" || notify-send "Scraping failed"'
+Path=/home/garner/code/chattanooga_events/
 Icon=utilities-terminal
 Terminal=true
 Type=Application

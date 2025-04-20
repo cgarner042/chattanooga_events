@@ -719,7 +719,8 @@ def create_all_events_dataframe(all_events):
     return all_df
 
 def save_all_events_to_csv(all_df, filename="all_events.csv"):
-    all_df.to_csv(filename, index=False)
+    filepath = os.path.join(DATA_FOLDER, filename)  
+    all_df.to_csv(filepath, index=False)
 
 def main():
     all_events = {}
@@ -775,29 +776,57 @@ if __name__ == "__main__":
 # BUGS & TODOS
 ####################
 
+# BUG: when run from .desktop file: script runs to completion (all sites are scrolled through at least) but no logs or CSVs recorded
+
+# TODO: LOGS: add colors, remove timestamps (add one at top of log), set extraction funtions to logging.debug
+#       Create 2 log files? one to hold just the info that should be recorded in the CSV (logging.info) and one for extra data (logging.debug)
+
+# TODO: run as set -x to watch for problems? or run without terminal window?
+
+# TODO: rename csv with date? delete csvs with dates older than ...
+
 # TODO: refactor date extraction to reduce redundant code
 
 # TODO: add a price function 
 
 # TODO: display image link as an image instead of a url
 
-# TODO: fix capture network requests
-
 # TODO: refactor debugging calls
 
-# TODO: do i need the chromedriver install statements? should i setup a new env and kernel for this script? containerize it?
+# TODO: do i need the chromedriver install statements? (no I dont) should i setup a new env and kernel for this script? containerize it?
 
 # BUG: script fails to establish connection (red herring?) when extracting shadow content on times free press
 
 # TODO: get past lightbox (choose chatt, nooga today)
 
-# TODO: i have two versions of CHA guide. only need one most likely
+# TODO: more robust running of script and opening of output file? poen email client with attachment set?
+	# use the following script to control running and any subsiquent actions. change .desktop to Exec=/home/garner/bin/open_csv.sh do i need this in $HOME/bin/ probably not
+'''
+#!/bin/bash
+# Load user environment
+source "$HOME/.profile"
+
+# Run scraper (with error checking)
+if ! python3 "$HOME/code/chattanooga_events/scraper.py"; then
+    notify-send "Scraping failed!"
+    exit 1
+fi
+
+# Open result (with fallback)
+if ! xdg-open "$HOME/code/chattanooga_events/data/all_events.csv"; then
+    libreoffice --calc "$HOME/code/chattanooga_events/data/all_events.csv" || \
+    notify-send "Failed to open CSV"
+fi
+'''
 
 ####################
 # THINGS DONE
 ####################
-
 '''
+# 4-20-25
+- updated .desktop to open csv after script runs
+- rough draft of more robust solution that might include emailing csv
+
 # 8-6-24
 
 - Started adding times free press
