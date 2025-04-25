@@ -119,11 +119,12 @@ SITES = {
             "parse_method": "title",
             "base_url": "",
             },
-        "date": {
-            "extract_method": "tag",
-            "parse_method": "split",
-            "tag": {"p":{"class": "event-date"}}
-            }, 
+	"date": {
+	"extract_method": "tag",
+	"parse_method": "split",
+	"tag": "p",
+	"attrs": {"class": "event_date"}  # Changed from nested dict to direct attrs
+	},
         
         "time": {"p": {"class": "event_date"}},
         "img": { 
@@ -387,95 +388,88 @@ def parse_html(html_content):
     return BeautifulSoup(html_content, 'html.parser')
 
 def extract_title(item, config):
-    title_tag, title_attrs = next(iter(config.get('title', {}).items()), (None, None))
-    logging.info(f"title_tag: {title_tag}")
-    logging.info(f"title_attrs: {title_attrs}")
-    if not title_tag:
-        return "N/A"
-    
-    title_element = item.find(title_tag, **title_attrs)
-    logging.info(f"title_element: {title_element}")
-    if not title_element:
-        return "N/A"
-    
-    a_tag = title_element.find('a') if title_element.name != 'a' else title_element
-    title = a_tag.text.strip() if a_tag else title_element.text.strip()
-    
-    return title, title_element
+    try:
+        title_tag, title_attrs = next(iter(config.get('title', {}).items()), (None, None))
+        logging.info(f"title_tag: {title_tag}")
+        logging.info(f"title_attrs: {title_attrs}")
+        if not title_tag:
+            return "N/A", None
+        
+        title_element = item.find(title_tag, **title_attrs)
+        logging.info(f"title_element: {title_element}")
+        if not title_element:
+            return "N/A", None
+        
+        a_tag = title_element.find('a') if title_element.name != 'a' else title_element
+        title = a_tag.text.strip() if a_tag else title_element.text.strip()
+        
+        return title, title_element
+    except Exception as e:
+        logging.error(f"Error extracting title: {e}")
+        return "N/A", None
 
 def extract_event_url(item, title_element, config):
+    try:
+        url_config = config.get('event_url', {})
+        logging.info(f"url_config: {url_config}")
+     
+        base_url = url_config.get('base_url', '')  
+        logging.info(f"base_url: {base_url}")  
+        
+        parse_method = url_config.get('parse_method')
 
-    url_config = config.get('event_url', {})
-    logging.info(f"url_config: {url_config}")
- 
-    base_url = url_config.get('base_url', '')  
-    logging.info(f"base_url: {base_url}")  
-    
-    parse_method = url_config.get('parse_method')
-
-    if parse_method == "title":
-
-        href_element = title_element.get('href', '')
-        logging.info(f"href_element: {href_element}")
-
-        if href_element:
-            url = base_url + href_element 
-            logging.info(f"url: {url}")
-            logging.info("*" * 80)
-            return url
-        else:
-            a_tag = title_element.find('a')
-            logging.info(f"a_tag: {a_tag}")
-            href_element = a_tag.get('href', '') if a_tag else ''
+        if parse_method == "title":
+            href_element = title_element.get('href', '')
             logging.info(f"href_element: {href_element}")
-            url = base_url + href_element 
+
+            if href_element:
+                url = base_url + href_element 
+                logging.info(f"url: {url}")
+                logging.info("*" * 80)
+                return url
+            else:
+                a_tag = title_element.find('a')
+                logging.info(f"a_tag: {a_tag}")
+                href_element = a_tag.get('href', '') if a_tag else ''
+                logging.info(f"href_element: {href_element}")
+                url = base_url + href_element 
+                logging.info(f"url: {url}")
+                logging.info("*" * 80)
+                return url
+
+        if parse_method == "tag":
+            url_tag = url_config.get('tag')
+            logging.info(f"url_tag: {url_tag}")
+
+            url_attrs = url_config.get('attrs', {})
+            logging.info(f"url_attrs: {url_attrs}")
+           
+            url_element = item.find(url_tag, **url_attrs)
+            logging.info(f"url_element: {url_element}")
+            if not url_element or 'href' not in url_element.attrs:
+                logging.info("*" * 80)
+                return "N/A"
+
+            url = url_element['href']
+            logging.info(f"url: {url}")
+
+            url = base_url + url if url != "N/A" and not url.startswith(('http://', 'https://')) else url
             logging.info(f"url: {url}")
             logging.info("*" * 80)
+
             return url
-
-
-    if parse_method == "tag":
-
-        url_tag = url_config.get('tag')
-        logging.info(f"url_tag: {url_tag}")
-
-        url_attrs = url_config.get('attrs', {})
-        logging.info(f"url_attrs: {url_attrs}")
-       
-        # url_element = item.find(url_tag)
-        # logging.info(f"url_element: {url_element}")
-
-        url_element = item.find(url_tag, **url_attrs)
-        logging.info(f"url_element: {url_element}")
-        if not url_element or 'href' not in url_element.attrs:
-            logging.info("*" * 80)
-            return "N/A"
-
-        url = url_element['href']
-        logging.info(f"url: {url}")
-
-        url = base_url + url if url != "N/A" and not url.startswith(('http://', 'https://')) else url
-        logging.info(f"url: {url}")
-        logging.info("*" * 80)
-
-        return url
+        
+        return "N/A"
+    except Exception as e:
+        logging.error(f"Error extracting event URL: {e}")
+        return "N/A"
 
 def parse_date_range(date_text, config):
-    date_config = config.get('date', {})
-    parse_method = date_config.get('parse_method')
-    
-    if parse_method == "parser.parse":
-        date_info = parser.parse(date_text, fuzzy=True)
-        logging.info(f"date_info: {date_info}")
-        date = date_info.strftime("%m-%d")
-        logging.info(f"date: {date}")
-        time = date_info.strftime("%I:%M %p")
-        logging.info(f"time: {time}")
-        logging.info("*" * 80)
-        return date, time
-
-    if parse_method == "time_range":
-        try:
+    try:
+        date_config = config.get('date', {})
+        parse_method = date_config.get('parse_method')
+        
+        if parse_method == "parser.parse":
             date_info = parser.parse(date_text, fuzzy=True)
             logging.info(f"date_info: {date_info}")
             date = date_info.strftime("%m-%d")
@@ -484,190 +478,223 @@ def parse_date_range(date_text, config):
             logging.info(f"time: {time}")
             logging.info("*" * 80)
             return date, time
-        except Exception as e:
-            logging.info(f"First parsing attempt failed: {e}")
-        try:
-            date_part, time_part = date_text.split("@")
-            logging.info(f"date_part: {date_part}")
-            logging.info(f"time_part: {time_part}")
-            date_obj = parser.parse(date_part, fuzzy=True)
+
+        if parse_method == "time_range":
+            try:
+                date_info = parser.parse(date_text, fuzzy=True)
+                logging.info(f"date_info: {date_info}")
+                date = date_info.strftime("%m-%d")
+                logging.info(f"date: {date}")
+                time = date_info.strftime("%I:%M %p")
+                logging.info(f"time: {time}")
+                logging.info("*" * 80)
+                return date, time
+            except Exception as e:
+                logging.info(f"First parsing attempt failed: {e}")
+            try:
+                date_part, time_part = date_text.split("@")
+                logging.info(f"date_part: {date_part}")
+                logging.info(f"time_part: {time_part}")
+                date_obj = parser.parse(date_part, fuzzy=True)
+                logging.info(f"date_obj: {date_obj}")
+                date = date_obj.strftime("%m-%d")
+                logging.info(f"date: {date}")
+                time = time_part
+                logging.info(f"time: {time}")
+                logging.info("*" * 80)
+                return date, time
+            except Exception as e:
+                logging.info(f"Second parsing attempt failed: {e}")
+                date = "Unexpected input."
+                time = "Event may have multiple dates or times."
+                return date, time
+
+        if parse_method == "split":
+            date_info, time_info = date_text.split(",")
+            logging.info(f"date_info: {date_info}")
+            logging.info(f"time_info: {time_info}")
+            date_obj = datetime.strptime(date_info, "%b %d")
             logging.info(f"date_obj: {date_obj}")
-            date = date_obj.strftime("%m-%d")
+            date = datetime.strftime(date_obj, "%m-%d")
             logging.info(f"date: {date}")
-            time = time_part
+            time_info = time_info[6:14]
+            logging.info(f"time_info: {time_info}")
+            if time_info != "":
+                time_obj = parser.parse(time_info)
+                logging.info(f"time_obj: {time_obj}")
+                time = datetime.strftime(time_obj, "%I:%M %p")
+            else:
+                time = "12:00 AM"
             logging.info(f"time: {time}")
             logging.info("*" * 80)
             return date, time
-        except Exception as e:
-            logging.info(f"Second parsing attempt failed: {e}")
-            date = "Unexpected input."
-            time = "Event may have multiple dates or times."
-            return date, time
-
-
-    if parse_method == "split":
-        date_info, time_info = date_text.split(",")
-        logging.info(f"date_info: {date_info}")
-        logging.info(f"time_info: {time_info}")
-        date_obj = datetime.strptime(date_info, "%b %d")
-        logging.info(f"date_obj: {date_obj}")
-        date = datetime.strftime(date_obj, "%m-%d")
-        logging.info(f"date: {date}")
-        time_info = time_info[6:14]
-        logging.info(f"time_info: {time_info}")
-        if time_info != "":
+            
+        if parse_method == "split '@'":
+            date_info, time_info = date_text.split(" @ ")
+            logging.info(f"date_info: {date_info}")
+            logging.info(f"time_info: {time_info}")
+            date_obj = datetime.strptime(date_info, "%B %d")
+            logging.info(f"date_obj: {date_obj}")
+            date = datetime.strftime(date_obj, "%m-%d")
+            logging.info(f"date: {date}")
+            
             time_obj = parser.parse(time_info)
             logging.info(f"time_obj: {time_obj}")
             time = datetime.strftime(time_obj, "%I:%M %p")
-        else:
-            time = "12:00 AM"
-        logging.info(f"time: {time}")
-        logging.info("*" * 80)
-        return date, time
-    if parse_method == "split '@'":
-        date_info, time_info = date_text.split(" @ ")
-        logging.info(f"date_info: {date_info}")
-        logging.info(f"time_info: {time_info}")
-        date_obj = datetime.strptime(date_info, "%B %d")
-        logging.info(f"date_obj: {date_obj}")
-        date = datetime.strftime(date_obj, "%m-%d")
-        logging.info(f"date: {date}")
-        
-        time_obj = parser.parse(time_info)
-        logging.info(f"time_obj: {time_obj}")
-        time = datetime.strftime(time_obj, "%I:%M %p")
-        logging.info(f"time: {time}")
-        logging.info("*" * 80)
-        return date, time
+            logging.info(f"time: {time}")
+            logging.info("*" * 80)
+            return date, time
 
+        return "N/A", "N/A"
+    except Exception as e:
+        logging.error(f"Error parsing date range: {e}")
+        return "N/A", "N/A"
 
 def extract_date_and_time(item, config):
-    date_config = config.get('date', {})
-    logging.info(f"date_config: {date_config}")
-    extract_method = date_config.get('extract_method')
-    logging.info(f"extract_method: {extract_method}")
-    date_tag = date_config.get('tag')
-    logging.info(f"date_tag: {date_tag}")
-    date_attrs = date_config.get('attrs')
-    logging.info(f"date_attrs: {date_attrs}")
-    
-    if not date_tag:
-        logging.info("*" * 80)
-        return "N/A", "N/A"
-    
-    if extract_method == "attrs":
-
-        date_element = item.find(date_tag, **date_attrs) if date_attrs else item.find(date_tag)
-        logging.info(f"date_element: {date_element}")
-
-
+    try:
+        date_config = config.get('date', {})
+        logging.info(f"date_config: {date_config}")
+        extract_method = date_config.get('extract_method')
+        logging.info(f"extract_method: {extract_method}")
+        date_tag = date_config.get('tag')
+        logging.info(f"date_tag: {date_tag}")
+        date_attrs = date_config.get('attrs')
+        logging.info(f"date_attrs: {date_attrs}")
         
-        if not date_element:
+        if not date_tag:
             logging.info("*" * 80)
             return "N/A", "N/A"
         
-        date_text = date_element.text.strip()
-        logging.info(f"date_text: {date_text}")
-        
+        if extract_method == "attrs":
+            date_element = item.find(date_tag, **date_attrs) if date_attrs else item.find(date_tag)
+            logging.info(f"date_element: {date_element}")
+            
+            if not date_element:
+                logging.info("*" * 80)
+                return "N/A", "N/A"
+            
+            date_text = date_element.text.strip()
+            logging.info(f"date_text: {date_text}")
 
-    elif extract_method == "tag":
-        date_element = item.find(date_tag,)
-        logging.info(f"date_element: {date_element}")
-        date_text =date_element.text.strip()
-        logging.info(f"date_text: {date_text}")
+        elif extract_method == "tag":
+            date_element = item.find(date_tag,)
+            logging.info(f"date_element: {date_element}")
+            date_text = date_element.text.strip()
+            logging.info(f"date_text: {date_text}")
 
-    
-
-    date, time = parse_date_range(date_text, config)  
-    if time == "12:00 AM":
-        time = "Open link for time"
-    logging.info("*" * 80)
-    return date, time  
+        date, time = parse_date_range(date_text, config)  
+        if time == "12:00 AM":
+            time = "Open link for time"
+        logging.info("*" * 80)
+        return date, time
+    except Exception as e:
+        logging.error(f"Error extracting date and time: {e}")
+        return "N/A", "N/A"
 
 def extract_image_url(item, config):
-    img_config = config.get('img', {})
-    if not img_config:
+    try:
+        img_config = config.get('img', {})
+        if not img_config:
+            return "N/A"
+        
+        parse_method = img_config.get('parse_method')
+        
+        if parse_method == 'lazy-src':
+            img_tag, img_attrs = next(iter(img_config.items()))
+            img_element = item.find(img_tag, **img_attrs)
+            return img_element.get('data-lazy-src') or img_element.get('src') if img_element else "N/A"
+        
+        elif parse_method == 'srcset_220w':
+            container_tag, container_attrs = next(iter(img_config['container'].items()))
+            container = item.find(container_tag, **container_attrs)
+            if not container:
+                return "N/A"
+            img_element = container.find(img_config['tag'])
+            if not img_element or img_config['attr'] not in img_element.attrs:
+                return "N/A"
+            srcset = img_element[img_config['attr']]
+            urls = srcset.split(', ')
+            for url in urls:
+                if '220w' in url:
+                    return url.split(' ')[0]
+            return urls[0].split(' ')[0] if urls else "N/A"
+        
+        elif parse_method == 'style_background':
+            container_tag, container_attrs = next(iter(img_config['container'].items()))
+            container = item.find(container_tag, **container_attrs)
+            if not container or 'style' not in container.attrs:
+                return "N/A"
+            style = container['style']
+            match = re.search(r'background-image:\s*url\("(.+?)"\)', style)
+            return match.group(1) if match else "N/A"
+        
+        elif parse_method == 'none':
+            container_tag, container_attrs = next(iter(img_config['container'].items()))
+            container = item.find(container_tag, **container_attrs)
+            if not container:
+                return "N/A"
+            img_element = container.find(img_config['tag'])
+            return img_element.get(img_config['attr']) if img_element else "N/A"
+        
         return "N/A"
-    
-    parse_method = img_config.get('parse_method')
-    
-    if parse_method == 'lazy-src':
-        img_tag, img_attrs = next(iter(img_config.items()))
-        img_element = item.find(img_tag, **img_attrs)
-        return img_element.get('data-lazy-src') or img_element.get('src') if img_element else "N/A"
-    
-    elif parse_method == 'srcset_220w':
-        container_tag, container_attrs = next(iter(img_config['container'].items()))
-        container = item.find(container_tag, **container_attrs)
-        if not container:
-            return "N/A"
-        img_element = container.find(img_config['tag'])
-        if not img_element or img_config['attr'] not in img_element.attrs:
-            return "N/A"
-        srcset = img_element[img_config['attr']]
-        urls = srcset.split(', ')
-        for url in urls:
-            if '220w' in url:
-                return url.split(' ')[0]
-        return urls[0].split(' ')[0] if urls else "N/A"
-    
-    elif parse_method == 'style_background':
-        container_tag, container_attrs = next(iter(img_config['container'].items()))
-        container = item.find(container_tag, **container_attrs)
-        if not container or 'style' not in container.attrs:
-            return "N/A"
-        style = container['style']
-        match = re.search(r'background-image:\s*url\("(.+?)"\)', style)
-        return match.group(1) if match else "N/A"
-    
-    elif parse_method == 'none':
-        container_tag, container_attrs = next(iter(img_config['container'].items()))
-        container = item.find(container_tag, **container_attrs)
-        if not container:
-            return "N/A"
-        img_element = container.find(img_config['tag'])
-        return img_element.get(img_config['attr']) if img_element else "N/A"
-    
-    return "N/A"
+    except Exception as e:
+        logging.error(f"Error extracting image URL: {e}")
+        return "N/A"
 
 def extract_location(item, config):
-    location_tag, location_attrs = next(iter(config.get('location', {}).items()), (None, None))
-    if not location_tag:
+    try:
+        location_tag, location_attrs = next(iter(config.get('location', {}).items()), (None, None))
+        if not location_tag:
+            return "N/A"
+        
+        parent_class = config.get('location', {}).get('parent', {}).get('class')
+        parent_element = item.find('div', class_=parent_class) if parent_class else item
+        
+        location_elements = parent_element.find_all(location_tag, **location_attrs) if location_attrs else parent_element.find_all(location_tag)
+        return " | ".join([loc.text.strip() for loc in location_elements]) if location_elements else "N/A"
+    except Exception as e:
+        logging.error(f"Error extracting location: {e}")
         return "N/A"
-    
-    parent_class = config.get('location', {}).get('parent', {}).get('class')
-    parent_element = item.find('div', class_=parent_class) if parent_class else item
-    
-    location_elements = parent_element.find_all(location_tag, **location_attrs) if location_attrs else parent_element.find_all(location_tag)
-    return " | ".join([loc.text.strip() for loc in location_elements]) if location_elements else "N/A"
 
 def extract_recurrence(item, config):
-    recurrence_tag, recurrence_attrs = next(iter(config.get('recurrence', {}).items()), (None, None))
-    if not recurrence_tag:
+    try:
+        recurrence_tag, recurrence_attrs = next(iter(config.get('recurrence', {}).items()), (None, None))
+        if not recurrence_tag:
+            return "N/A"
+        
+        recurrence_element = item.find(recurrence_tag, **recurrence_attrs) if recurrence_attrs else item.find(recurrence_tag)
+        return recurrence_element.text.strip() if recurrence_element else "N/A"
+    except Exception as e:
+        logging.error(f"Error extracting recurrence: {e}")
         return "N/A"
-    
-    recurrence_element = item.find(recurrence_tag, **recurrence_attrs) if recurrence_attrs else item.find(recurrence_tag)
-    return recurrence_element.text.strip() if recurrence_element else "N/A"
 
 def extract_category(item, config):
-    category_tag, category_attrs = next(iter(config.get('category', {}).items()), (None, None))
-    if not category_tag:
-        return "N/A"
-    
-    category_elements = item.find_all(category_tag, **category_attrs) if category_attrs else item.find_all(category_tag)
-    return [cat.text.strip() for cat in category_elements] if category_elements else ["N/A"]
+    try:
+        category_tag, category_attrs = next(iter(config.get('category', {}).items()), (None, None))
+        if not category_tag:
+            return ["N/A"]
+        
+        category_elements = item.find_all(category_tag, **category_attrs) if category_attrs else item.find_all(category_tag)
+        return [cat.text.strip() for cat in category_elements] if category_elements else ["N/A"]
+    except Exception as e:
+        logging.error(f"Error extracting category: {e}")
+        return ["N/A"]
 
 def extract_details(item, config):
-    details_tag, details_attrs = next(iter(config.get('details', {}).items()), (None, None))
-    if not details_tag:
+    try:
+        details_tag, details_attrs = next(iter(config.get('details', {}).items()), (None, None))
+        if not details_tag:
+            return "N/A"
+        
+        details_element = item.find(details_tag, **details_attrs) if details_attrs else item.find(details_tag)
+        if not details_element:
+            return "N/A"
+        
+        details_text = ' '.join(details_element.stripped_strings)
+        return details_text if details_text else "N/A"
+    except Exception as e:
+        logging.error(f"Error extracting details: {e}")
         return "N/A"
-    
-    details_element = item.find(details_tag, **details_attrs) if details_attrs else item.find(details_tag)
-    if not details_element:
-        return "N/A"
-    
-    details_text = ' '.join(details_element.stripped_strings)
-    return details_text if details_text else "N/A"
 
 
 ####################
@@ -776,12 +803,12 @@ if __name__ == "__main__":
 # BUGS & TODOS
 ####################
 
-# BUG: when run from .desktop file: script runs to completion (all sites are scrolled through at least) but no logs or CSVs recorded
+# TODO: set .desktop to open csv_to_html after scraping, then open events_table.html
 
 # TODO: LOGS: add colors, remove timestamps (add one at top of log), set extraction funtions to logging.debug
 #       Create 2 log files? one to hold just the info that should be recorded in the CSV (logging.info) and one for extra data (logging.debug)
 
-# TODO: run as set -x to watch for problems? or run without terminal window?
+# TODO: run as set -x to watch for problems? or run without terminal window? two versions? one headless, one for debugging?
 
 # TODO: rename csv with date? delete csvs with dates older than ...
 
