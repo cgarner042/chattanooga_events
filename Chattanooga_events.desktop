@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Name=Chattanoogga Event Scraper
-Comment=Run event scraper python script
-Exec=bash -c '/home/garner/anaconda3/bin/python "/home/garner/code/chattanooga_events/event_scraper6.py" && libreoffice --calc "/home/garner/code/chattanooga_events/data/all_events.csv" || notify-send "Scraping failed"'
+Comment=Run event scraper python script to open spreadsheet after successful ad to exec: && libreoffice --calc "/home/garner/code/chattanooga_events/data/all_events.csv" || notify-send "Scraping failed"
+Exec=bash -c '/home/garner/anaconda3/bin/python "/home/garner/code/chattanooga_events/event_scraper6.py" && /home/garner/anaconda3/bin/python "/home/garner/code/chattanooga_events/csv_to_html.py'
 Path=/home/garner/code/chattanooga_events/
 Icon=utilities-terminal
 Terminal=true
